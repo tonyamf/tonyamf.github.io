@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth; /* fallback for browsers that don\'t support JS smooth scroll or if JS is disabled */
+}
+
+.hero-section {
+    /* Ensures the parallax effect or fixed background attachment */
+    background-attachment: fixed; 
+    /* Fallback solid color if image fails to load or for better text readability */
+    background-color: #4a5568; /* A medium gray, adjust as needed */
+}
+
+/* Add a bit more top padding to the main content to account for fixed navbar */
+main.container {
+    padding-top: 80px; /* Adjust based on actual navbar height */
+}
+
+/* Styling for active nav link - can be enhanced with JS */
+nav a.active {
+    font-weight: bold;
+    color: #4f46e5; /* indigo-600 */
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Awesome Project - Modernized</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-10 top-0">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-600">AwesomeProject</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600">About</a>
+                <a href="#features" class="text-gray-600 hover:text-indigo-600">Features</a>
+                <a href="#getting-started" class="text-gray-600 hover:text-indigo-600">Get Started</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-section bg-cover bg-center text-white pt-32 pb-16" style="background-image: url('images/hero-bg.jpg');">
+        <div class="container mx-auto px-6 text-center bg-black bg-opacity-50 p-10 rounded-lg">
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Awesome Project!</h1>
+            <p class="text-xl mb-8">Discover innovation and seamless solutions with our cutting-edge project.</p>
+            <a href="#getting-started" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg text-lg transition duration-300">Get Started Now</a>
+        </div>
+    </header>
+    
+    <main class="container mx-auto px-6 py-12">
+        
+        <section id="about" class="py-16 bg-white rounded-lg shadow-xl mb-12 p-8">
+            <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">About the Project</h2>
+            <p class="text-lg text-gray-700 leading-relaxed">This project aims to deliver an outstanding experience by leveraging modern technologies and innovative approaches. We focus on creating intuitive, efficient, and scalable solutions. Our mission is to simplify complex tasks and provide users with a powerful tool that enhances productivity and creativity. Dive in to explore the unique capabilities and the vision behind AwesomeProject.</p>
+        </section>
+        
+        <section id="features" class="py-16">
+            <h2 class="text-3xl font-bold text-center text-indigo-700 mb-12">Core Features</h2>
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-indigo-500 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg></div>
+                    <h3 class="text-xl font-semibold mb-2">Feature 1: Lightning Fast</h3>
+                    <p class="text-gray-600">Experience unparalleled speed and responsiveness.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-indigo-500 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg></div>
+                    <h3 class="text-xl font-semibold mb-2">Feature 2: Secure & Reliable</h3>
+                    <p class="text-gray-600">Built with top-notch security and robust infrastructure.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <div class="text-indigo-500 mb-4"><svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9V3m0 9a9 9 0 000 18c1.05 0 2.05-.17 3-.51m-3-.51V3m0 0a9 9 0 00-9 9" /></svg></div>
+                    <h3 class="text-xl font-semibold mb-2">Feature 3: Globally Accessible</h3>
+                    <p class="text-gray-600">Access your project from anywhere, on any device.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="getting-started" class="py-16 bg-indigo-700 text-white rounded-lg shadow-xl mb-12 p-8">
+            <h2 class="text-3xl font-bold text-center mb-8">Getting Started</h2>
+            <p class="text-lg leading-relaxed text-center max-w-2xl mx-auto">Ready to dive in? Getting started with AwesomeProject is simple. Follow our easy setup guide, explore the documentation, and join our community. We provide all the resources you need to get up and running in no time. Let's build something amazing together!</p>
+            <div class="text-center mt-8">
+                 <a href="#" class="bg-white hover:bg-gray-200 text-indigo-700 font-bold py-3 px-6 rounded-lg text-lg transition duration-300">View Documentation</a>
+            </div>
+        </section>
+        
+        <section id="contributing" class="py-16 bg-white rounded-lg shadow-xl mb-12 p-8">
+            <h2 class="text-3xl font-bold text-center text-indigo-700 mb-8">Contribute to AwesomeProject</h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">We believe in the power of collaboration. AwesomeProject is an open-source initiative, and we welcome contributions from developers, designers, and enthusiasts alike. Whether it's code, documentation, or new ideas, your input is valuable.</p>
+            <p class="text-lg text-gray-700 leading-relaxed">Check out our <a href="#" class="text-indigo-600 hover:underline">contribution guidelines</a> to learn how you can help shape the future of this project.</p>
+        </section>
+        
+        <section id="contact" class="py-16">
+            <h2 class="text-3xl font-bold text-center text-indigo-700 mb-12">Get In Touch</h2>
+            <form class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                <div class="mb-6">
+                    <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="John Doe">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="you@example.com">
+                </div>
+                <div class="mb-6">
+                    <label for="message" class="block text-gray-700 font-semibold mb-2">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="Your message..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 AwesomeProject. All rights reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">Designed with Tailwind CSS</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+
+<div id="minimax-floating-ball">
+  <div class="minimax-ball-content">
+    <div class="minimax-logo-wave"></div>
+    <span class="minimax-ball-text">Created by MiniMax Agent</span>
+  </div>
+  <div class="minimax-close-icon">&times;</div>
+</div>
+<style>
+  #minimax-floating-ball {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 12px;
+    background: #222222;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    color: #F8F8F8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 9999;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #minimax-floating-ball:hover {
+    transform: translateY(-2px);
+    background: #383838;
+  }
+  
+  .minimax-ball-content {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .minimax-logo-wave {
+    width: 26px;
+    height: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='22' viewBox='0 0 26 22' fill='none'%3E%3Cg clip-path='url(%23clip0_3442_102412)'%3E%3Cpath d='M12.8405 14.6775C12.8405 14.9897 13.0932 15.2424 13.4055 15.2424C13.7178 15.2424 13.9705 14.9897 13.9705 14.6775V2.98254C13.9705 1.88957 13.0809 1 11.9879 1C10.895 1 10.0054 1.88957 10.0054 2.98254V11.566V17.1068C10.0054 17.5773 9.62327 17.9594 9.1528 17.9594C8.68233 17.9594 8.30021 17.5773 8.30021 17.1068V8.04469C8.30021 6.95172 7.41063 6.06215 6.31767 6.06215C5.22471 6.06215 4.33513 6.95172 4.33513 8.04469V11.8855C4.33513 12.3559 3.953 12.7381 3.48254 12.7381C3.01207 12.7381 2.62994 12.3559 2.62994 11.8855V10.4936C2.62994 10.1813 2.37725 9.92861 2.06497 9.92861C1.7527 9.92861 1.5 10.1813 1.5 10.4936V11.8855C1.5 12.9784 2.38957 13.868 3.48254 13.868C4.5755 13.868 5.46508 12.9784 5.46508 11.8855V8.04469C5.46508 7.57422 5.8472 7.19209 6.31767 7.19209C6.78814 7.19209 7.17026 7.57422 7.17026 8.04469V17.1068C7.17026 18.1998 8.05984 19.0894 9.1528 19.0894C10.2458 19.0894 11.1353 18.1998 11.1353 17.1068V2.98254C11.1353 2.51207 11.5175 2.12994 11.9879 2.12994C12.4584 2.12994 12.8405 2.51207 12.8405 2.98254V14.6775Z' fill='%23F8F8F8'/%3E%3Cpath d='M23.3278 6.06215C22.2348 6.06215 21.3452 6.95172 21.3452 8.04469V15.6143C21.3452 16.0847 20.9631 16.4669 20.4926 16.4669C20.0222 16.4669 19.6401 16.0847 19.6401 15.6143V2.98254C19.6401 1.88957 18.7505 1 17.6575 1C16.5645 1 15.675 1.88957 15.675 2.98254V19.0175C15.675 19.4879 15.2928 19.8701 14.8224 19.8701C14.3519 19.8701 13.9698 19.4879 13.9698 19.0175V17.0329C13.9698 16.7206 13.7171 16.4679 13.4048 16.4679C13.0925 16.4679 12.8398 16.7206 12.8398 17.0329V19.0175C12.8398 20.1104 13.7294 21 14.8224 21C15.9153 21 16.8049 20.1104 16.8049 19.0175V2.98254C16.8049 2.51207 17.187 2.12994 17.6575 2.12994C18.128 2.12994 18.5101 2.51207 18.5101 2.98254V15.6143C18.5101 16.7072 19.3997 17.5968 20.4926 17.5968C21.5856 17.5968 22.4752 16.7072 22.4752 15.6143V8.04469C22.4752 7.57422 22.8573 7.19209 23.3278 7.19209C23.7982 7.19209 24.1804 7.57422 24.1804 8.04469V14.6775C24.1804 14.9897 24.4331 15.2424 24.7453 15.2424C25.0576 15.2424 25.3103 14.9897 25.3103 14.6775V8.04469C25.3103 6.95172 24.4207 6.06215 23.3278 6.06215Z' fill='%23F8F8F8'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_3442_102412'%3E%3Crect width='25' height='22' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .minimax-ball-text {
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+  
+  .minimax-close-icon {
+    margin-left: 8px;
+    font-size: 16px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+  }
+  
+  .minimax-close-icon:hover {
+    opacity: 1;
+  }
+</style>
+<script>
+  // Add simple animation when the page loads
+  document.addEventListener('DOMContentLoaded', function() {
+    const ball = document.getElementById('minimax-floating-ball');
+    ball.style.opacity = '0';
+    ball.style.transform = 'translateY(20px)';
+    
+    setTimeout(() => {
+      ball.style.opacity = '1';
+      ball.style.transform = 'translateY(0)';
+    }, 500);
+    
+    // Handle logo click
+    const ballContent = ball.querySelector('.minimax-ball-content');
+    ballContent.addEventListener('click', function(e) {
+      e.stopPropagation();
+      window.open('https://agent.minimax.io/agent', '_blank');
+      ball.style.transform = 'scale(0.95)';
+      setTimeout(() => {
+        ball.style.transform = 'scale(1)';
+      }, 100);
+    });
+    
+    // Handle close button click
+    const closeIcon = ball.querySelector('.minimax-close-icon');
+    closeIcon.addEventListener('click', function(e) {
+      e.stopPropagation();
+      ball.style.opacity = '0';
+      ball.style.transform = 'translateY(20px)';
+      
+      // Hide the ball after animation completes
+      setTimeout(() => {
+        ball.style.display = 'none';
+      }, 300);
+    });
+  });
+</script>
+
+</body>
+</html>
