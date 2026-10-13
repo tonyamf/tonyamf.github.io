@@ -1,0 +1,28 @@
+name: Build site and check links
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      LANG: C.UTF-8
+      PAGES_REPO_NWO: ${{ github.repository }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+      - name: Build with Jekyll
+        run: bundle exec jekyll build -d _site
+      - name: Root page exists
+        run: test -f _site/index.html
+      - name: Check internal links and images
+        run: bundle exec htmlproofer _site --disable-external --no-enforce-https
+      - name: Check external links (report only)
+        continue-on-error: true
+        run: bundle exec htmlproofer _site --no-enforce-https --ignore-status-codes "999,429"
